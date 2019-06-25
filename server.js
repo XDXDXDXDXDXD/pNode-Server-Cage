@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 const path = require('path');
 const fs = require('fs');
 
@@ -8,19 +7,6 @@ const env = process.env.NODE_ENV || 'dev';
 const config = require('./config')[env];
 
 const app = express();
-
-// Bootstrap db connection
-var promise = mongoose.connect(config.db, {
-  useMongoClient: true
-});
-
-mongoose.Promise = global.Promise;
-
-// Bootstrap models
-const models_path = __dirname + '/model'
-fs.readdirSync(models_path).forEach(function (file) {
-  if (~file.indexOf('.js')) require(models_path + '/' + file)
-});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
