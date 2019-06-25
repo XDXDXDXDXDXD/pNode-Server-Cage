@@ -1,0 +1,15 @@
+{
+  "name": "pNode-Server",
+  "version": "1.0.0",
+  "description": "Wireless Sensor Network (WSN) Backend for the pNode IOT device",
+  "dependencies": {
+    "async": "2.6.0",
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "google-spreadsheet": "2.0.4",
+    "jsonwebtoken": "8.1.0",
+    "mongoose": "4.13.4",
+    "ws": ">=3.3.1"
+  }
+}
