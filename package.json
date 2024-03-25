@@ -5,7 +5,7 @@
   "dependencies": {
     "async": "2.6.0",
     "body-parser": "1.18.2",
-    "express": "4.16.2",
+    "express": "4.19.2",
     "ws": ">=3.3.1"
   }
 }
